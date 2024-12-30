@@ -10,5 +10,3 @@ jobs:
     uses: hpatel3747/reusable-workflows/.github/workflows/ci-main.yaml@main
     with:
       componentName: catalogue
-    secrets:
-      NR_API_KEY: ${{ secrets.NR_API_KEY }}
