@@ -12,7 +12,7 @@ run-name: ${{ github.sha }} | ${{ github.event.head_commit.message }}
 jobs:
   call-workflow:
     #You call a reusable workflow by using the 'uses' keyword
-    uses: hpatel3747/github-reusable-actions/.github/workflows/ci-dev-branch.yaml@main
+    uses: hpatel3747/reusable-workflows/.github/workflows/ci-dev-branch.yaml@main
     with:
       componentName: catalogue
 

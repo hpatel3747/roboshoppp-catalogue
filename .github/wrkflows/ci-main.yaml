@@ -7,7 +7,7 @@ on:
 run-name: ${{ github.sha }} | ${{ github.event.head_commit.message }}
 jobs:
   ci-step:
-    uses: hpatel3747/github-reusable-actions/.github/workflows/ci-main.yaml@main
+    uses: hpatel3747/reusable-workflows/.github/workflows/ci-main.yaml@main
     with:
       componentName: catalogue
     secrets:
