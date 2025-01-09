@@ -12,4 +12,5 @@ RUN         npm install
 COPY        db/master-data.js /app/db
 #RUN         mongosh --host 9eebaeb4ca3a </app/db/master-data.js
 #ENTRYPOINT  ["bash", "/app/run.sh"]
-ENTRYPOINT   ["tail", "-f", "dev/null"]
+#ENTRYPOINT   ["tail", "-f", "dev/null"]
+CMD["sleep", "1d"]
